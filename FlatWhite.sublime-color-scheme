@@ -1,0 +1,81 @@
+{
+  "name": "Flat White Color Scheme",
+  "variables":
+  {
+    "base1": "hsl(35,  8%, 35%)",
+    "base2": "hsl(35, 15%, 50%)",
+    "base3": "hsl(35, 22%, 65%)",
+    "base4": "hsl(35, 24%, 82%)",
+    "base5": "hsl(35, 25%, 86%)",
+    "base6": "hsl(35, 30%, 92%)",
+    "base7": "hsl(35, 36%, 95%)",
+    "accent": "hsl(250, 100%, 65%)",
+    "orange-text": "hsl(35, 15%, 31%)",
+    "orange-text-sec": "hsl(35, 22%, 48%)",
+    "orange-bg": "hsla(35, 100%, 47%, 0.18)",
+    "green-text": "hsl(71, 12%, 30%)",
+    "green-text-sec": "hsl(71, 19%, 45%)",
+    "green-bg": "hsla(78, 100%, 37%, 0.19)",
+    "teal-text": "hsl(161, 12%, 31%)",
+    "teal-text-sec": "hsl(161, 19%, 46%)",
+    "teal-bg": "hsla(172, 100%, 37%, 0.15)",
+    "blue-text": "hsl(220, 12%, 34%)",
+    "blue-text-sec": "hsl(220, 19%, 54%)",
+    "blue-bg": "hsla(220, 100%, 73%, 0.20)",
+    "purple-text": "hsl(300, 12%, 34%)",
+    "purple-text-sec": "hsl(300, 17%, 53%)",
+    "purple-bg": "hsla(282, 100%, 68%, 0.15)",
+  },
+  "globals":
+  {
+    "background":"var(base7)",
+    "foreground":"var(base1)",
+    "caret":"var(accent)",
+    "selection":"color(var(base5) alpha(0.6))",
+    "line_highlight":"color(var(base1) alpha(0.07))",
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "foreground": "var(base3)"
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "foreground": "var(green-text)",
+      "background": "var(green-bg)"
+    },
+    {
+      "name": "Boolean",
+      "scope": "constant.language",
+      "foreground": "var(teal-text)",
+      "background": "var(teal-bg)"
+    },
+    {
+      "name": "Numbers",
+      "scope": "constant.numeric",
+      "foreground": "var(teal-text)",
+      "background": "var(teal-bg)"
+    },
+    {
+      "name": "class/struct/enum/etc",
+      "scope": "entity.name",
+      "foreground": "var(purple-text)",
+      "background": "var(purple-bg)"
+    },
+    {
+      "name": "ruby symbols",
+      "scope": "constant.other",
+      "foreground": "var(blue-text)",
+      "background": "var(blue-bg)"
+    },
+    {
+      "name": "variables",
+      "scope": "variable",
+      "foreground": "var(blue-text)",
+      "background": "var(blue-bg)"
+    },
+
+  ]
+}
